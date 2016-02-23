@@ -1,0 +1,7 @@
+<div id="container">
+<%= @river.name %>
+<%= link_to "Total number of fish: #{@river.fish.count}", fish_index_path  %>
+<%= link_to "Bears", bears_path %>
+
+<%= link_to 'Back', rivers_path %>
+</div>

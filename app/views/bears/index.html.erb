@@ -1,0 +1,11 @@
+<div id="container">
+<% @bears.each do |bear| %>
+  <%= bear.name %> - 
+  Roar: "<%= bear.roar %>"
+  Number of fish consumed: <%= bear.fishcount %>
+  <%= button_to "Catch fish!", catch_fish_path(bear.id) %>
+<br>
+<% end %>
+
+<%= link_to 'Back to rivers', rivers_path %>
+</div>
